@@ -6,11 +6,11 @@
 ## Install
 
 ```
-$ npm install <%= moduleName %>
+npm install <%= moduleName %>
 ```
 or
 ```
-$ yarn add <%= moduleName %>
+yarn add <%= moduleName %>
 ```
 
 
