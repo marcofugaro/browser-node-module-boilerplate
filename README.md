@@ -2,6 +2,7 @@
 
 > Boilerplate for creating a library for both the browser and node
 
+
 This boilerplate is inspired from [sindresorhus/node-module-boilerplate](https://github.com/sindresorhus/node-module-boilerplate).
 
 The scaffolding is similar, it adds support for shipping your code to the browser using Rollup as a bundler.
@@ -21,6 +22,8 @@ curl -fsSL https://github.com/marcofugaro/browser-node-module-boilerplate/archiv
 
 Otherwise you can `git clone` or [download](https://github.com/marcofugaro/browser-node-module-boilerplate/archive/master.zip) this repo and get the contents of the `boilerplate` folder.
 
+## TODO
+- choose a testing framework (ava?)
 
 ## License
 
