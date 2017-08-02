@@ -20,6 +20,9 @@
 		"test": ""
 	},
 	"main": "build/<%= moduleName %>.min.js",
+  "files": [
+    "build/"
+  ],
 	"dependencies": {},
 	"devDependencies": {
     "babel-preset-babili": "^0.1.4",
