@@ -12,17 +12,18 @@
 	"keywords": [
     ""
 	],
-	"engines": {
-		"node": ">=4"
-	},
 	"scripts": {
 		"build": "rollup -c",
-		"test": ""
+		"test": "",
+    "prepublish": "npm run build"
 	},
 	"main": "build/<%= moduleName %>.min.js",
   "files": [
     "build/"
   ],
+  "engines": {
+    "node": ">=4"
+  },
 	"dependencies": {},
 	"devDependencies": {
     "babel-preset-babili": "^0.1.4",
