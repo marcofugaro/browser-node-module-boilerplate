@@ -13,11 +13,12 @@
     ""
 	],
 	"scripts": {
-		"build": "rollup -c",
+		"build": "rollup -c && npm run minify",
+    "minify": "minify build/<%= moduleName %>.js --out-file build/<%= moduleName %>.min.js",
 		"test": "",
     "prepublish": "npm run build"
 	},
-	"main": "build/<%= moduleName %>.min.js",
+	"main": "build/<%= moduleName %>.js",
   "files": [
     "build/"
   ],
@@ -26,14 +27,13 @@
   },
 	"dependencies": {},
 	"devDependencies": {
-    "babel-preset-babili": "^0.1.4",
+    "babel-minify": "^0.2.0",
 		"babel-plugin-lodash": "^3.2.11",
 		"babel-plugin-transform-decorators-legacy": "^1.3.4",
 		"babel-preset-env": "^1.6.0",
 		"babel-preset-stage-0": "^6.24.1",
 		"rollup": "^0.45.2",
 		"rollup-plugin-babel": "^2.7.1",
-		"rollup-plugin-bundle-size": "^1.0.1",
 		"rollup-plugin-commonjs": "^8.0.2",
 		"rollup-plugin-node-resolve": "^3.0.0"
 	}
