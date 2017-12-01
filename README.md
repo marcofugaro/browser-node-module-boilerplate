@@ -22,9 +22,6 @@ curl -fsSL https://github.com/marcofugaro/browser-node-module-boilerplate/archiv
 
 Otherwise you can `git clone` or [download](https://github.com/marcofugaro/browser-node-module-boilerplate/archive/master.zip) this repo and get the contents of the `boilerplate` folder.
 
-## TODO
-- choose a testing framework (ava?)
-
 ## License
 
 MIT © [Marco Fugaro](https://github.com/marcofugaro)
