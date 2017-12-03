@@ -1,41 +1,41 @@
 {
-	"name": "<%= moduleName %>",
-	"version": "0.0.0",
-	"description": "<%= description %>",
-	"license": "MIT",
-	"repository": "<%= githubUsername %>/<%= moduleName %>",
-	"author": {
-		"name": "<%= name %>",
-		"email": "<%= email %>",
-		"url": "<%= website %>"
-	},
-	"keywords": [
+  "name": "<%= moduleName %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "license": "MIT",
+  "repository": "<%= githubUsername %>/<%= moduleName %>",
+  "author": {
+    "name": "<%= name %>",
+    "email": "<%= email %>",
+    "url": "<%= website %>"
+  },
+  "keywords": [
     ""
-	],
-	"scripts": {
-		"build": "rollup -c && npm run minify",
+  ],
+  "scripts": {
+    "build": "rollup -c && npm run minify",
     "minify": "minify build/<%= moduleName %>.js --out-file build/<%= moduleName %>.min.js",
-		"test": "ava",
+    "test": "ava",
     "prepublish": "npm run build"
-	},
-	"main": "build/<%= moduleName %>.js",
+  },
+  "main": "build/<%= moduleName %>.js",
   "files": [
     "build/"
   ],
   "engines": {
     "node": ">=4"
   },
-	"dependencies": {},
-	"devDependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "ava": "^0.21.0",
     "babel-minify": "^0.2.0",
-		"babel-plugin-lodash": "^3.2.11",
-		"babel-plugin-transform-decorators-legacy": "^1.3.4",
-		"babel-preset-env": "^1.6.0",
-		"babel-preset-stage-0": "^6.24.1",
-		"rollup": "^0.45.2",
-		"rollup-plugin-babel": "^2.7.1",
-		"rollup-plugin-commonjs": "^8.0.2",
-		"rollup-plugin-node-resolve": "^3.0.0"
-	}
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
 }
