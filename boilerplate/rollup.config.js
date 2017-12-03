@@ -4,9 +4,12 @@ import babel from 'rollup-plugin-babel'
 import pkg from './package.json'
 
 export default {
-  entry: 'src/index.js',
-  format: 'umd',
-  moduleName: '<%= camelModuleName %>',
+  input: 'src/index.js',
+  output: {
+    file: pkg.main,
+    format: 'umd',
+    name: '<%= camelModuleName %>',
+  }
   plugins: [
     resolve(),
     commonjs(),
@@ -14,5 +17,4 @@ export default {
       exclude: 'node_modules/**',
     }),
   ],
-  dest: pkg.main,
 }
