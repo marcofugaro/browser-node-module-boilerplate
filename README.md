@@ -14,14 +14,46 @@ The scaffolding is similar, it adds support for shipping your code to the browse
 
 The easiest way is to use the [Yeoman generator](https://github.com/marcofugaro/generator-browser-node-module), you get to configure more stuff that way.
 
-Alternatively, run:
+Alternatively, click the [Use this template](https://github.com/marcofugaro/browser-node-module-boilerplate/generate) button here on github, it will create a repo containing these files.
+
+Otherwise you can just `git clone` or [download](https://github.com/marcofugaro/browser-node-module-boilerplate/archive/master.zip) this repo.
+
+
+## Install
 
 ```
-curl -fsSL https://github.com/marcofugaro/browser-node-module-boilerplate/archive/master.tar.gz | tar -xz --strip-components=2 browser-node-module-boilerplate-master/boilerplate
+npm install <%= moduleName %>
+```
+or
+```
+yarn add <%= moduleName %>
 ```
 
-Otherwise you can `git clone` or [download](https://github.com/marcofugaro/browser-node-module-boilerplate/archive/master.zip) this repo and get the contents of the `boilerplate` folder.
 
-## License
+## Usage
 
-MIT © [Marco Fugaro](https://github.com/marcofugaro)
+```js
+import <%= camelModuleName %> from '<%= moduleName %>'
+
+// ...
+```
+
+
+## API
+
+### <%= camelModuleName %>(input, options?)
+
+#### input
+
+Type: `string`
+
+Lorem ipsum.
+
+#### options
+
+##### foo
+
+Type: `boolean`<br>
+Default: `false`
+
+Lorem ipsum.
